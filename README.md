@@ -1,75 +1,69 @@
-# Nuxt 3 Minimal Starter
+# Simple Web App - Nuxt 3
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+## Description
 
-## Setup
+Nuxt 3 simple application that contain login page, user list page and user detail page. Using sidebase/nuxt-auth for authentification and tailwindcss as the css framework.
 
-Make sure to install the dependencies:
+VhiWEB Frontend Developer Test Case
 
-```bash
-# npm
-npm install
+### Development Setup
 
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
+- Install dependencies
 
 ```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
+$ pnpm install
 ```
 
-## Production
-
-Build the application for production:
+- Run local development server in background
 
 ```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
+$ pnpm dev
 ```
 
-Locally preview production build:
+- Visit `localhost:3000/` on a browser
 
-```bash
-# npm
-npm run preview
+- To get the user credentials, please visit https://reqres.in/ and see LOGIN - SUCCESSFUL request documentation 
 
-# pnpm
-pnpm run preview
+### Dependencies
 
-# yarn
-yarn preview
+- Reqres (https://reqres.in/): Public API to provide the login and user data.
 
-# bun
-bun run preview
-```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+
+### Folder Structure
+
+#### Assets
+
+- **`assets/css`**: CSS and SCSS stylesheets.
+
+#### Componets
+
+- **`components/`**: Vue components used in the application.
+
+    - **`components/ui`**: Component that can be reusable.
+
+#### Layout
+
+- **`layouts/`**: Layouts framework to extract common UI patterns that can be reusable.
+
+#### Pages
+
+- **`pages/`**: File-based routing to create routes within  application.
+
+#### Public
+
+- **`public/`**: This folder contain website's static assets.
+
+    - **`public/icons`**: SVGs files used in application.
+
+#### Server
+
+- **`server/`**: API and server handlers used in application.
+
+#### Stores
+
+- **`stores/`**: Vuex Store files to store and manage states that used globally in application.
+
+#### Utils
+
+- **`utils/`**: Utility functions and helper files.
