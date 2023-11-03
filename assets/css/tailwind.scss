@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    select,
+    input,
+    textarea {
+        @apply focus-visible:outline-cyan-500;
+    }
+}
